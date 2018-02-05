@@ -89,7 +89,7 @@ else:
     inc = findonpath("Eigen/Eigen", [option("eigen", "")])
 
 env.Append(CPPPATH=[inc])
-env.Append(LIBS=["png", "protobuf"])
+env.Append(LIBS=["png", "protobuf", "pthread"])
 
 # You can enable display debugging with `display=1` (probably not working right now)
 
